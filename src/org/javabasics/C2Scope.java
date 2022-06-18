@@ -1,6 +1,6 @@
 package org.javabasics;
 
-public class Scope {
+public class C2Scope {
     static int count;
     int x;
 

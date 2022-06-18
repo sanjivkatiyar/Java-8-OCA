@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ConsoleIO {
+public class C3ConsoleIO {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in); // keyboard
         System.out.print("Enter a number: ");
