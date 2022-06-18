@@ -13,7 +13,7 @@ public class ClassStructure {
         // every program starts here
     }
 
-    public static void m1() { // static method
+    public static void m1() { // static method | Static methods can call static variables only
     }
 
     public void m2 () { // instance method
