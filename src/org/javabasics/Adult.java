@@ -1,7 +1,7 @@
 package org.javabasics;
 
 public class Adult {
-    private String name;
+    private String name;  // has-a  // Adult has a name
     private int age;
     protected String address;
     public String badPractice;
