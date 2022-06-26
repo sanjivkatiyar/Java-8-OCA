@@ -1,6 +1,19 @@
 package org.javabasics;
 
-public class C41Interface {
+public class C41Interface implements Moveable{
+    // void move(); // must be public can not assign weaker privilege
+
+    @Override
+    public void move(){
+        System.out.println("Dog:move()");
+    }
+
+    public static void main(String[] args) {
+        // s = "walk"; // can not change the final variable
+        System.out.println(s);   // move
+        // move(); // can not refer to instance member from a static context
+        new C41Interface().move();
+    }
 }
 
 interface I{
@@ -26,4 +39,48 @@ interface I2{
     // static final int x=1;
     // public static final int x=1;
     final static public int x=1;
+}
+
+interface Moveable{
+    String s = "move";                // constant - public static
+    void move();                      // public abstract
+}
+
+
+interface Moveable1{
+    void moveIt();
+}
+
+interface Spherical{
+    void doSphericalThings();
+}
+
+// interface can extend from one or more interfaces
+// class can implement one or more interfaces
+interface Bounceable extends Moveable1, Spherical{
+    void bounce();
+}
+
+// concrete class Volleyball must implement all abstract methods in Bounceable
+class VolleyBall implements Bounceable{
+
+    @Override
+    public void moveIt() {
+
+    }
+
+    @Override
+    public void doSphericalThings() {
+
+    }
+
+    @Override
+    public void bounce() {
+
+    }
+}
+
+// BeachBall is okay as it's abstract, can implement all, some or none abstract method of Bounceable
+abstract class BeachBall implements Bounceable{
+
 }
