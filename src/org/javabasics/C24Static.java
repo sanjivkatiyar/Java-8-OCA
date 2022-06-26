@@ -17,27 +17,6 @@ public class C24Static {
 class Person{                 //if we add public will throw error and ask to write the clas in Person.java
     private String theName; // initialized to null
     private int count; // initialized to 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //Constructor can have access modifier but not specifier or return type
     // specifier alone with throw compilation error and adding return type will convert it to a method
     Person(String aName) {
