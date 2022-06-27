@@ -4,6 +4,7 @@ public class C43StaticInterfaceMethod {
     public static void main(String[] args) {
         System.out.println(StaticIface.m1());
         new testSIF().go();
+        // new testSIF().m1();  // static methods are not inherited but default are
     }
 }
 
