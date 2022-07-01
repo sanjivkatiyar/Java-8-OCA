@@ -5,6 +5,7 @@ public class C53FinallyBlock {
         ex1(+8);
         ex1(-4);
         ex2();
+        System.out.println(ex3());
     }
     public static void ex1(int x){
         try{
@@ -24,6 +25,20 @@ public class C53FinallyBlock {
     public static void ex2(){
         try{                 // try-finally is okay
         } finally {
+        }
+    }
+
+    public static String ex3(){
+        String s = "";
+        try{
+            s="ok";
+            // throw new RuntimeException();
+        } catch(Exception e){
+            s="Catch";
+            return s;
+        } finally {
+            s="finally";
+            return s;
         }
     }
 }
