@@ -80,4 +80,21 @@ public class C51TryCatch {
             // } catch(FileNotFoundException e1|IOException e2){
         } catch(IOException e){}
     }
+
+    public static void tryEx(){
+        try{ // try-catch okay
+             // Exception is okay do not need to throw
+        }catch(Exception e){
+
+        }
+
+
+        // try{} // not okay, must be followed by catch or finally
+
+        try{
+        }
+        // System.out.println(); // not okay, cant have any code between try and catch.
+        catch(Exception e){
+        }
+    }
 }
