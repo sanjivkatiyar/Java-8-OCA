@@ -3,6 +3,8 @@ package org.javabasics;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
 
 public class C64Time {
     public static void main(String[] args) {
@@ -31,6 +33,24 @@ public class C64Time {
 
         System.out.println(lectureBegins);
         System.out.println(lectureEnds);
+
+        preDefinedFormats();
+    }
+
+    private static void preDefinedFormats(){
+        LocalDate date = LocalDate.of(2021, Month.JANUARY, 1);
+        LocalTime time = LocalTime.of(9,00);
+        LocalDateTime dateTime = LocalDateTime.of(date, time);
+
+        System.out.println(date);
+        System.out.println(time);
+        System.out.println(dateTime);
+
+        System.out.println(date.format(DateTimeFormatter.ISO_LOCAL_DATE));
+        System.out.println(time.format(DateTimeFormatter.ISO_LOCAL_TIME));
+        System.out.println(dateTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+        System.out.println(dateTime.format(DateTimeFormatter.ISO_LOCAL_DATE));       // ok
+        System.out.println(time.format(DateTimeFormatter.ISO_LOCAL_DATE));           // not okay not available in time, run time exception
 
     }
 }
