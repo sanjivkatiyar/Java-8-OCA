@@ -70,6 +70,14 @@ public class C64Time {
 
         System.out.println(date.format(format));
         System.out.println(date.format(dateTimeFormatter));
-        System.out.println(date.format(dateTimeFormatter1)); // not ok time missing in date, run time Exception
+        //System.out.println(date.format(dateTimeFormatter1)); // not ok time missing in date, run time Exception
+
+        LocalTime time  = LocalTime.of(14,10);
+
+        DateTimeFormatter dateTimeFormatter3 = DateTimeFormatter.ofPattern("'Phone call at' h:mm a");
+        System.out.println(time.format(dateTimeFormatter3));
+        DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("Phone call at h:mm a");// not okay text should be in single ', run time error
+        System.out.println(time.format(dateTimeFormatter2));
+
     }
 }
