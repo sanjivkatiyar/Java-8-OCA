@@ -35,6 +35,7 @@ public class C64Time {
         System.out.println(lectureEnds);
 
         preDefinedFormats();
+        customFormats();
     }
 
     private static void preDefinedFormats(){
@@ -50,7 +51,25 @@ public class C64Time {
         System.out.println(time.format(DateTimeFormatter.ISO_LOCAL_TIME));
         System.out.println(dateTime.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
         System.out.println(dateTime.format(DateTimeFormatter.ISO_LOCAL_DATE));       // ok
-        System.out.println(time.format(DateTimeFormatter.ISO_LOCAL_DATE));           // not okay not available in time, run time exception
+        //System.out.println(time.format(DateTimeFormatter.ISO_LOCAL_DATE));           // not okay not available in time, run time exception
 
+    }
+
+    private static void customFormats(){
+        // Date
+        LocalDate date = LocalDate.of(2022,Month.AUGUST,10);
+        System.out.println("customFormats");
+        System.out.println(date);
+
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MMM-dd");
+        System.out.println(format);
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd E D");  // single E will return Wed
+        System.out.println(dateTimeFormatter);
+        DateTimeFormatter dateTimeFormatter1 = DateTimeFormatter.ofPattern("yyyy-MM-dd EEEE D h H m s S"); // 4 E to get name like Sunday
+        System.out.println(dateTimeFormatter1);
+
+        System.out.println(date.format(format));
+        System.out.println(date.format(dateTimeFormatter));
+        System.out.println(date.format(dateTimeFormatter1)); // not ok time missing in date, run time Exception
     }
 }
