@@ -1,5 +1,6 @@
 package org.javabasics;
 
+// public < protected < package (i.e. no modifier) < private
 public class C26AccessModifiers {
     public static void main(String[] args) {
         Adult john = new Adult("John", 22);

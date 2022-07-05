@@ -10,12 +10,12 @@ public class C46Enum {
         System.out.println(d==Direction.EAST);        // true as they are immutable
         System.out.println(d.equals(Direction.EAST)); // true
 
-        switch(d){
+        /*switch(d){
             case EAST -> System.out.println("EAST");
             case WEST-> System.out.println();
             // case 0 -> System.out.println();        // required type Direction provided int
             // case Direction.NORTH -> System.out.println();  // must be an unqualified name of enum constant
-        }
+        }*/
         // if(Direction.WEST == 3)                    // Direction vs int
         Direction d1 = Direction.valueOf("EAST");
         System.out.println(d1);

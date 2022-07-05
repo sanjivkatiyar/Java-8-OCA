@@ -1,5 +1,9 @@
 package org.javabasics;
 
+// from Java 1.5, an overriding method is allowed to change the return type
+// to any subclass of the original return type, also known as covariant return type.
+// This does not apply to primitives, in which case, the return type of the overriding method
+// must match exactly to the return type of the overridden method.
 public class C33OverridingAndOverloading {
     public static void main(String[] args) {
         Animal aa = new Animal();

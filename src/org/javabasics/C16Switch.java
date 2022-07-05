@@ -1,5 +1,9 @@
 package org.javabasics;
-
+// Only String, byte, char, short, int, (and their wrapper classes Byte, Character, Short, and Integer),
+// and enums can be used as types of a switch variable. String is allowed since Java 7.
+// All case labels should be COMPILE TIME CONSTANTS.
+// The default label is optional an can be in any order
+// break is optional
 public class C16Switch {
     public static void main(String[] args) {
         switchExample1("Soccer");
@@ -20,6 +24,7 @@ public class C16Switch {
         switch (1) {
         } //valid
 
+        System.out.println("switchExample1();");
         switch (sport) {
             default:
                 System.out.println("Unknown sport");
@@ -50,7 +55,7 @@ public class C16Switch {
 
     public static void switchExample3()
     {
-        var x = (byte)4; // var is byte => -128..+127
+        byte x = (byte)4; // var is byte => -128..+127
        /* switch(x){
             case -130: //out of range
             case 130:  //out of range
@@ -80,6 +85,7 @@ public class C16Switch {
         final int c;        // not initialized
         c = 20;             // initialized at run time
         Byte byteW = 30;     // initialized at runtime like Byte iw = new Byte(10);
+        final int I = 2*3;
 
         switch(b){
             case ic:        // compile time constant
@@ -89,6 +95,7 @@ public class C16Switch {
 //            case byteW:   // not a compile time constant
 //            case b:       // not a compile time constant
             case 3:          // compile time constant
+            case I:         // int is okay with in limit
 
         }
     }

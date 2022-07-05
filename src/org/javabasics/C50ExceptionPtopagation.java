@@ -1,5 +1,10 @@
 package org.javabasics;
 
+// You can only throw a java.lang.Throwable object
+// (i.e. an instance of Throwable or any of its direct or indirect subclasses)
+// using a throws clause. Remember that java.lang.Exception and java.lang.
+// Error are the only two directly subclasses of Throwable.
+// All other exception classes inherit directly or indirectly from one of these two.
 public class C50ExceptionPtopagation {
     public static void main(String[] args) {
         a();

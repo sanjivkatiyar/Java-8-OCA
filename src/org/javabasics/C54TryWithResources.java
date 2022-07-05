@@ -18,7 +18,7 @@ public class C54TryWithResources {
         // scope is local i.e. ok to use in again
         // var is okay
         try(FileInputStream in = new FileInputStream("in.txt");
-            var out = new FileOutputStream("out.txt")){
+            FileOutputStream out = new FileOutputStream("out.txt")){
         }
     }
 }

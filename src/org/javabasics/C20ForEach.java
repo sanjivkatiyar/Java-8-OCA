@@ -20,7 +20,7 @@ public class C20ForEach {
             System.out.println(car);
         }
 
-        for(var car:cars){       // var is ok
+        for(String car:cars){       // var is ok
             System.out.println(car);
         }
 

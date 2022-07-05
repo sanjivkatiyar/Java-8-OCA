@@ -11,8 +11,8 @@ public class C15IfStatement {
 
     public static void ifStatements1(){
 
-        var x = 5;
-        var y = 6;
+        int x = 5;
+        int y = 6;
 
         if(x>3)     // true
             x ++;   // 6
@@ -27,8 +27,8 @@ public class C15IfStatement {
     }
 
     public static void ifStatements2(){
-        var x = 5;
-        var y = 6;
+        int x = 5;
+        int y = 6;
 
         if(x ==4) {
             x++;
@@ -41,8 +41,8 @@ public class C15IfStatement {
     }
 
     public static void ifStatements3(){
-        var x = 5;
-        var y = 6;
+        int x = 5;
+        int y = 6;
         boolean b = false;
 
         if(b = true){    //true assignment!
@@ -59,8 +59,8 @@ public class C15IfStatement {
     }
 
     public static void ifStatements4(){
-        var x = 0;
-        var y = 0;
+        int x = 0;
+        int y = 0;
         // if(x=3) {} // compilation error, not a boolean expression
         if(x==3)
         if(x==10)
