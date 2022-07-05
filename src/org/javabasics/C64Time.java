@@ -27,6 +27,24 @@ import java.time.format.DateTimeFormatter;
 //        For example, we can use these to find out the first or last day of the month.
 //        You can identify these methods easily because they always have format “withXXX”.
 
+//This calendar is based on the Gregorian calendar system and is used globally as the defacto standard
+// for representing date and time. The core classes in the Date-Time API have names
+// such as LocalDateTime, ZonedDateTime, and OffsetDateTime.
+// All of these use the ISO calendar system.
+// If you want to use an alternative calendar system, such as Hijrah or Thai Buddhist,
+// the java.time.chrono package allows you to use one of the predefined calendar systems.
+// Or you can create your own.
+
+// These classes do not have any setters.
+// Once created you cannot change their contents.
+// Even their constructors are private.
+// These classes do not have any public constructors. Y
+// ou need to use their static factory methods to get their instances.
+// Most are immutable
+
+// None of LocalDate, LocalDateTime, or LocalTime store zone information.
+
+
 public class C64Time {
     public static void main(String[] args) {
 
@@ -57,6 +75,11 @@ public class C64Time {
 
         preDefinedFormats();
         customFormats();
+        java.time.LocalDate d1 = java.time.LocalDate.of(2015, Month.JANUARY, 31);
+        java.time.LocalDateTime d2 = java.time.LocalDateTime.of(2015, Month.JANUARY, 31, 10, 56);
+        java.time.LocalDateTime d3 = java.time.LocalDateTime.parse("2015-01-02T17:13:50"); //Note that this will throw a  java.time.format.DateTimeParseException if the input string lacks the time component i.e.T17:13:50
+        java.time.LocalDate d4 = java.time.LocalDate.parse("2015-01-02"); //Note that this will throw a  java.time.format.DateTimeParseException if the input string contains the time component
+        java.time.LocalTime d5 = java.time.LocalTime.parse("02:13:59.985"); //Note that this will throw a  java.time.format.DateTimeParseException if the input string contains the Date component
     }
 
     private static void preDefinedFormats(){

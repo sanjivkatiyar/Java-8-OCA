@@ -1,5 +1,7 @@
 package org.javabasics;
 
+//finally is always executed (even if you throw an exception in try or catch) but this is the exception to the rule.
+//When you call System.exit(...); The JVM exits so there is no way to execute the finally block.
 public class C53FinallyBlock {
     public static void main(String[] args) {
         ex1(+8);

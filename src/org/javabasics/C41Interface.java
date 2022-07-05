@@ -1,5 +1,9 @@
 package org.javabasics;
 
+// The keyword implements is used when a class inherits method prototypes from an interface.
+// The keyword extends is used when an interface inherits from another interface,
+// or a class inherits from another class.
+// Any class, whether abstract or concrete, can implement any interface.
 public class C41Interface implements Moveable{
     // void move(); // must be public can not assign weaker privilege
 

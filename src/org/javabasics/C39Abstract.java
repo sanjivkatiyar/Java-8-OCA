@@ -1,5 +1,9 @@
 package org.javabasics;
 
+// Abstract methods are meant to be overridden in the subclass.
+// Abstract methods describe a behavior but do not implement it.
+// So the subclasses have to override it to actually implement the behavior.
+// A subclass may chose not to override it, in which case, the subclass will have to be abstract too.
 public class C39Abstract {
     public static void main(String[] args) {
         // Pen pen = new Pen();            // can not use "new" as Pen is abstract

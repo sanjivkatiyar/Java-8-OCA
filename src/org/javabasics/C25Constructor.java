@@ -42,3 +42,18 @@ class Clothing{
     // }
     // but there is no no-arg constructor in clothing
 //}
+
+
+class Computer {
+    int price;
+    Computer (int price){
+        this.price = price;
+    }
+}
+// The access type of a default constructor is same as the access type of the class.
+// Thus, if a class is public, the default constructor will be public.
+// A constructor does not return any value at all. It is meant to initialize the state of an object.
+/* will not compile as not default constructor present in super
+class laptop extends Computer{
+
+}*/

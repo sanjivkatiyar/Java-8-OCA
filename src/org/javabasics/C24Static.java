@@ -1,6 +1,8 @@
 package org.javabasics;
 
-
+//An instance member belongs to a single instance, not the class as a whole.
+// An instance member is a member variable or a member method that belongs to a specific object instance.
+// All non-static members are instance members.
 public class C24Static {
     public static void main(String[] args) {
         Person p1 = new Person("John");

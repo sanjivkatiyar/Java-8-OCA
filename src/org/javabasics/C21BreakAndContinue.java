@@ -1,5 +1,7 @@
 package org.javabasics;
-
+// A continue causes the next iteration of the loop to start without executing
+// the remaining statements in the loop. The updation section (if it is a for loop)
+// and the condition is also checked before the next iteration of the loop is started.
 public class C21BreakAndContinue {
     public static void main(String[] args) {
        // nestedLoop();

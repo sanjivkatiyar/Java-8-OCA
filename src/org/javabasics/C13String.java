@@ -3,6 +3,9 @@ package org.javabasics;
 import javax.sound.midi.Soundbank;
 import java.util.Locale;
 
+// String in not primitive
+// Java has only the following primitive data types:
+//boolean, byte, short, char, int, long, float and double
 public class C13String {
     public static void main(String[] args) {
         refVersusObjects();
