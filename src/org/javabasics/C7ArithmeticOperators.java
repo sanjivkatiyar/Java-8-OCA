@@ -25,5 +25,8 @@ public class C7ArithmeticOperators {
         byte b5 = (byte) (b1 + b2); //casting required
         System.out.println(b5);
 
+        // modular operator can be applied on float as well.
+        System.out.println(4.3%4);
+
     }
 }

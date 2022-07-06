@@ -57,3 +57,18 @@ class Computer {
 class laptop extends Computer{
 
 }*/
+
+//  this is used to call same class constructor
+// this or super must be first line
+// either of them can be called.
+class Tablet extends Computer{
+    Tablet(int i){
+        super(i);
+    }
+
+    Tablet(){
+        this(6);
+    }
+
+}
+//  In Java fields are initialized before the constructor. 

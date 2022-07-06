@@ -11,7 +11,12 @@ public class Q6 {
         l = c;        // char to long
         s = b;
         // c = s;        // short to char or char to short require cast as their range do not match
-        f = i;        // byte to chat or chat to byte require cost
+        // c = b;       // byte to char or char to byte require cost
+        // b = s;        // not okay,
+        // final value is okay
+
+
+        f = i;
 
 
         //short
@@ -36,6 +41,13 @@ public class Q6 {
         f = l;
         f=8;
         f=8f;
+
+
+        final short fs = 10;
+        b = fs;
+        c = fs;
+
+
 
 
     }
