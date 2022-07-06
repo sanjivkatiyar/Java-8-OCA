@@ -1,5 +1,9 @@
 package org.javabasics;
-
+//You cannot apply any modifier except final to a local variable.
+// i.e. you cannot make them transient, volatile, static, public,
+// and private. But you can apply access modifiers (public private and protected)
+// and final, transient, volatile, static to instance variables.
+// You cannot apply native and synchronized to any kind of variable.
 public class C48ObjectLifeCycle {
     public static void main(String[] args) {
         Goat goat1 = new Goat();

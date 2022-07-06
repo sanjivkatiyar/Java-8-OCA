@@ -44,6 +44,8 @@ import java.time.format.DateTimeFormatter;
 
 // None of LocalDate, LocalDateTime, or LocalTime store zone information.
 
+// LocalDate, LocalTime, and LocalDateTime implement TemporalAccessor.
+
 
 public class C64Time {
     public static void main(String[] args) {

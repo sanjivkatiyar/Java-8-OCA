@@ -1,5 +1,13 @@
 package org.javabasics;
 
+// A constructor can be declared private.
+// A constructor can access the non-static members of a class.
+// A default no args one will be provided if not defined any.
+// All non-final instance variables get default values if not explicitly initialized.
+// A constructor is non-static,
+// and so it can access directly both the static and non-static members of the class.
+// Constructor has not return type
+// construction can not be inheritted so no need to make it final (can not be final)
 public class C25Constructor {
     public static void main(String[] args) {
         Dog d = new Dog();
@@ -71,4 +79,4 @@ class Tablet extends Computer{
     }
 
 }
-//  In Java fields are initialized before the constructor. 
+//  In Java fields are initialized before the constructor.
