@@ -2,6 +2,11 @@ package org.javabasics;
 
 import java.io.IOException;
 
+// Only the methods that are not declared to be final can be overridden.
+// Further, private methods are not inherited so they cannot be overridden either.
+
+// The overriding method may opt not to declare any throws clause
+// even if the original method has a throws clause.
 public class C35OverloadingRules {
 }
 
