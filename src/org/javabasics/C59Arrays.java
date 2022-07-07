@@ -2,6 +2,7 @@ package org.javabasics;
 
 // String[] sa1, sa2; Here, both - sa1 and sa2 are String arrays.
 // String sa1[], sa2; Here, only sa1 is a String array. sa2 is just a String.
+// Array size cannot be given here as the array is being initialized in the declaration.
 public class C59Arrays {
     public static void main(String[] args) {
         int[] a = new int[3];

@@ -2,7 +2,7 @@ package org.javabasics;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// You cannot find out the number of the current iteration while iterating.
 public class C20ForEach {
     public static void main(String[] args) {
         String[] cars = new String[3];
