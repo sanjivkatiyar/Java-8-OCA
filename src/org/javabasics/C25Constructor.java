@@ -8,6 +8,7 @@ package org.javabasics;
 // and so it can access directly both the static and non-static members of the class.
 // Constructor has not return type
 // construction can not be inheritted so no need to make it final (can not be final)
+// Constructor becomes a valid method if return type is specified
 public class C25Constructor {
     public static void main(String[] args) {
         Dog d = new Dog();
