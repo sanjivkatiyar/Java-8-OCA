@@ -1,6 +1,7 @@
 package org.javabasics;
 // Only String, byte, char, short, int, (and their wrapper classes Byte, Character, Short, and Integer),
 // and enums can be used as types of a switch variable. String is allowed since Java 7.
+// long, float, double, and boolean can never be used as a switch variable.
 // All case labels should be COMPILE TIME CONSTANTS.
 // The default label is optional an can be in any order
 // break is optional
