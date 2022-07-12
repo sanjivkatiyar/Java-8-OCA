@@ -8,7 +8,7 @@ public class Q8 {
         List s1 = new ArrayList();
         try {
             while (true) {
-                s1.add("sdfa");
+                s1.add("sdfa");                            // Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
             }
         } catch (RuntimeException e) {
             e.printStackTrace();
