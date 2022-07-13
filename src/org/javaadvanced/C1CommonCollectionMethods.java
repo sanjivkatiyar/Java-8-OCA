@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class CommonCollectionMethods {
+public class C1CommonCollectionMethods {
     public static void main(String[] args) {
         // List allows duplicate
         Collection<String> col = new ArrayList<>();
@@ -28,6 +28,7 @@ public class CommonCollectionMethods {
         // asList() returns unmodifiable collection
         // add() will throw an unsupported exception
         Collection<String> col1 = Arrays.asList("Lucy", "April", "Lucy");
+
         col1.add("Tracy");                      // UnsupportedOperationException runtime
     }
 }
