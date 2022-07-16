@@ -69,6 +69,7 @@ public class C2UsingLists {
         remCol.add(null);
         list.removeAll(remCol);
         System.out.println(list);
+
     }
 
     public static void stack() {
