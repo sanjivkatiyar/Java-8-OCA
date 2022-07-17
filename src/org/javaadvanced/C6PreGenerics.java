@@ -24,9 +24,5 @@ public class C6PreGenerics {
         myList2.add("Fred");
         // myList2.add(new Book("Java", 22.0)); // compile time error
         String name = myList2.get(0); // no casting required.
-
-
-
-
     }
 }
