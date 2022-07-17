@@ -1,6 +1,6 @@
 package org.javaadvanced;
 
-public class C11ultipleGenericsType {
+public class C11MultipleGenericType {
     public static void main(String[] args) {
         new Register(new Dog(), "Shep", 3);
         new Register(new Cat(), 75, "SK");
