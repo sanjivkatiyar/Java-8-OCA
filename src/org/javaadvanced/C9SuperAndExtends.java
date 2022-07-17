@@ -10,7 +10,7 @@ public class C9SuperAndExtends {
 
         // List<Animal> animals = new ArrayList<Cat>(); // compile time error
 
-        List<Cat> cats = new ArrayList<>();
+        List<Cat> cats1 = new ArrayList<>();
         // addAnimal(cats);                  // compile time error
 
         // extends is read only
@@ -31,11 +31,30 @@ public class C9SuperAndExtends {
        //dog2.add(new Animal()); //compilation error
         dog3.add(new Dog());
 
+        List<Object> objects = new ArrayList<>();
+        objects.add(new Object());
+        List<Animal> animals = new ArrayList<>();
+        animals.add(new Animal());
+        List<Cat> cats = new ArrayList<>();
+        cats.add(new Cat());
+        List<Dog> dogs = new ArrayList<>();
+        dogs.add(new Dog());
+        List<ManX> manxs = new ArrayList<>();
+        manxs.add(new ManX());
+        List<Terner> terners = new ArrayList<>();
+        terners.add(new Terner());
 
+        ext(animals);
+        ext(cats);
+        ext(dogs);
+        ext(manxs);
+        ext(terners);
+        // ext(objects);   // compilation error   // upper-bound
 
-
-
-
+        spr(dogs);
+        spr(animals);
+        spr(objects);
+        //spr(cats);      // compilation error lower bound
     }
 
     public static void addAnimal(Animal[] animals){
@@ -51,6 +70,13 @@ public class C9SuperAndExtends {
         // list.add   // compile time error
         for (Animal animal : list) {
             System.out.println(animal);
+        }
+    }
+
+    public static void spr(List<? super Dog> list) {
+        // list.add   // compile time error
+        for (Object o : list) {
+            System.out.println(o);
         }
     }
 }
