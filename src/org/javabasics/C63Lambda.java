@@ -41,6 +41,9 @@ public class C63Lambda {
         System.out.println(check(4, i-> i>0));
         System.out.println(check(4, i-> i<0));
         System.out.println(check("Sanjiv", i-> i.startsWith("San")));
+
+        System.out.println(check(3, i->i%2==0));
+        System.out.println(check(4, i->i%2==0));
     }
 
     private static <T> boolean check(T t, Predicate<T> lambda){
