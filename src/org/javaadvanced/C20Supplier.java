@@ -16,5 +16,11 @@ public class C20Supplier {
 
         Supplier<Double> supD = Math::random;
         System.out.println(supD.get());
+
+        System.out.println(generate(()->new StringBuilder().append("SK")));
+    }
+
+    public static <T> T generate(Supplier<T> supplier){
+        return supplier.get();
     }
 }
