@@ -131,6 +131,12 @@ public class C5UsingQueues {
         while (itBooks.hasNext()){
             System.out.println(bookByTitle.poll());
         }
+
+        Set<Book> list = new TreeSet<>(comparatorTitle);
+        list.add(new Book("Java", 55.0));
+        list.add(new Book("Python", 23.0));
+        list.add(new Book("C++", 99.0));
+        list.forEach(System.out::println);
     }
 
 }
