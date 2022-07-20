@@ -14,6 +14,18 @@ public class C36StreamsAreLazy {
             System.out.println("Filter : " + s);
             return true;
         }).anyMatch(s->s.startsWith("J"));
+
+        Stream.of("Sanjiv","Jyoti","Ishi", "Ishuu","Shikha")
+                .peek(System.out::println)
+                .filter(s->{
+                    System.out.println("Filter1 : " + s);
+                    return s.startsWith("I");})
+                .filter(s->{
+                    System.out.println("Filter2 : " + s);
+                    return s.length() > 4;})
+                .limit(1)
+                .forEach(System.out::println);
+
     }
 
 
