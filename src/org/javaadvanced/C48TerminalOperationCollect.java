@@ -78,5 +78,13 @@ public class C48TerminalOperationCollect {
         Map<Boolean, List<String>> mapOfAdults =
                 nameOfAdults.collect(Collectors.partitioningBy(v->v.startsWith("T")));
         System.out.println(mapOfAdults);
+
+
+        Stream<String> nameOfAdults1 = Stream.of("Tom", "Teresa", "Mike", "Alan", "Peter");
+        Map<Boolean, Set<String>> mapOfAdults1 =
+                nameOfAdults1.collect(Collectors.partitioningBy(v->v.startsWith("T"),
+                        Collectors.toSet()));
+        System.out.println(mapOfAdults);
+
     }
 }
