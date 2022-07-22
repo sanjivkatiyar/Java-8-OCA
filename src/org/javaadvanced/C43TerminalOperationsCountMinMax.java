@@ -4,7 +4,10 @@ import java.util.Comparator;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class TerminalOperationsCountMinMax {
+//Optional<T> min(Comparator)
+//Optional<T> max(Comparator)
+
+public class C43TerminalOperationsCountMinMax {
     public static void main(String[] args) {
         long count = Stream.of("dog","Cat").count();
         System.out.println(count);
