@@ -12,6 +12,13 @@ public class C54IntermediateOperationSorted {
         Stream.of(child1, child2)
                 .sorted(Comparator.comparing(Child::getAge))
                 .forEach(System.out::println);
+
+        // default sorting
+        Stream.of("Sanjiv", "Jyoti", "Ishi", "Shreyas")
+                .filter(name-> name.length()>3)
+                .sorted()
+                .limit(2)
+                .forEach(System.out::println);
     }
 
 }
