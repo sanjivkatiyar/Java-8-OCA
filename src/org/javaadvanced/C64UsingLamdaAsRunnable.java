@@ -1,6 +1,6 @@
 package org.javaadvanced;
 
-public class UsingLamdaAsRunnable {
+public class C64UsingLamdaAsRunnable {
     public static void main(String[] args) {
         Thread t = new Thread(()-> System.out.println("run(): " + Thread.currentThread().getName()));
 
