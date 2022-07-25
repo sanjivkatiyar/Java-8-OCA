@@ -10,6 +10,7 @@ public class C66ExecutorService {
         ExecutorService es = Executors.newCachedThreadPool();
 
         int cpuCount = Runtime.getRuntime().availableProcessors();
+        System.out.println(cpuCount);
         ExecutorService es2 = Executors.newFixedThreadPool(cpuCount);
 
         ExecutorService es3 = Executors.newSingleThreadExecutor();
