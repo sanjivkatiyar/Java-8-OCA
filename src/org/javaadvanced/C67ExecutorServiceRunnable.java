@@ -19,6 +19,7 @@ public class C67ExecutorServiceRunnable {
             }
         });
 
+        // shut down executor service otherwise application will never terminate
         ex.shutdown();
     }
 }
