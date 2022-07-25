@@ -2,12 +2,14 @@ package org.javaadvanced;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class C76ConcurrentyProblemWithCollection {
 
     public static void main(String[] args) {
 
-        Map<String, String> capitalCities = new HashMap<>();
+        //Map<String, String> capitalCities = new HashMap<>();
+        Map<String, String> capitalCities = new ConcurrentHashMap<>();
         capitalCities.put("New Delhi", "India");
         capitalCities.put("Washington DC", "USA");
 
