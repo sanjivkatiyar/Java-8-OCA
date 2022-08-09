@@ -19,7 +19,7 @@ public class C97FileCopyDeleteMove {
         Files.createDirectories(Paths.get("nio2"));
 
         if(Files.exists(source)){
-
+            // Shallow copy   - directories will not be copied
             Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
             Files.move(target, target2, StandardCopyOption.REPLACE_EXISTING);
         } else{
